@@ -4,6 +4,8 @@ import App from './App.vue'
 Vue.config.productionTip = false
 
 import Painel from './components/Painel'
+import store from './store/store'
+
 Vue.component('Painel', Painel)
 
 Vue.filter('dinheiro', valor => {
@@ -11,5 +13,6 @@ Vue.filter('dinheiro', valor => {
 })
 
 new Vue({
-	render: h => h(App),
+    store,
+    render: h => h(App)
 }).$mount('#app')
