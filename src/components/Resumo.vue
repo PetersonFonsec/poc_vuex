@@ -11,20 +11,20 @@
 <script>
 import {mapGetters} from 'vuex'
 export default {
-    // computed: mapGetters(['valorTotal'])
-    computed: mapGetters({
-        total: 'valorTotal'
-    })
+  // computed: mapGetters(['valorTotal'])
+  computed: mapGetters({
+    total: 'valorTotal'
+  })
 }
 </script>
 
 <style>
-    table {
-        width: 100%;
-    }
+  table {
+    width: 100%;
+  }
 
-    td {
-        border-top: 1px solid #EEE;
-        width: 33%;
-    }
+  td {
+    border-top: 1px solid #EEE;
+    width: 33%;
+  }
 </style>
